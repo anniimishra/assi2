@@ -35,7 +35,6 @@ Description: Retrieves a random multiple-choice question from the database. The 
 Response:
 
 json
-Copy code
 {
     "id": 1,
     "question": "What is the capital of France?",
@@ -54,7 +53,6 @@ Description: Accepts a user’s answer for a specific question and updates the s
 Request Body (JSON):
 
 json
-Copy code
 {
     "question_id": 1,
     "selected_option": 3
@@ -63,13 +61,11 @@ Response:
 
 For a correct answer:
 json
-Copy code
 {
     "result": "correct"
 }
 For an incorrect answer:
 json
-Copy code
 {
     "result": "incorrect"
 }
@@ -81,7 +77,6 @@ Description: Retrieves the current quiz statistics for the session, including to
 Response:
 
 json
-Copy code
 {
     "total_questions": 5,
     "correct_answers": 3,
